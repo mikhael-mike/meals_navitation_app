@@ -14,6 +14,9 @@ class CategoriesItem extends StatelessWidget {
   void selectedInkwell(BuildContext context) {
     // Navigator.of(context).push(MaterialPageRoute(builder: (context) => CategoriesScreen()));
     Navigator.of(context).pushNamed(MealsScreenCategories.routName, arguments: {'id': id, 'title': title});
+
+    // new syntax ?
+    // Navigator.pushNamed(context, MealsScreenCategories.routName, arguments: {'id': id, 'title': title});
   }
   
   // const CategoriesWidget({ Key? key }) : super(key: key);
